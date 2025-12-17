@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Brandon-text-regular';
+    src: url(fonts/HvDTrial_Brandon_Text_Regular-BF6514e9eb617a0.otf);
+  
+   
+}
+@font-face {
+    font-family: 'Mayrean';
+    src: url(fonts/SHRIMP.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+    background-color: #0F5132;
+
+  line-height: 1.5; 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #FAF7F2;
+
+    height: 70px;
+}
+
+.rectangle-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5rem;
+
+}
+
+.text{
+        color: #0F5132;
+
+    font-family: 'Mayrean';
+    font-size: 30px;
+}
+
+.text i {
+    margin-left: 12px;
+
+}
+.navbar-container{
+    width: 180%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.ul-tags ul{
+    gap: 25px;
+    display: flex;
+    list-style: none;
+    
+}
+.ul-tags ul li a{
+    text-decoration: none;
+    font-family: 'Mayrean';
+    color: #0F5132;
+    font-weight: 20px;
+    font-size: 18px;
+    position: relative;
+    transition: 0.2s ease-in ;
+}
+
+#cart{
+        color: #0F5132;
+
+    font-size: 30px;
+    margin-left: 30rem;
+}
+#hamburger{
+    color: #0F5132;
+
+    font-size: 30px;
+    margin-left: 2rem;
+   
+}
+.ul-tags a:after{
+    content: "";
+    position: absolute;
+    background-color: #0F5132;
+
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    border-radius: 2px;
+    transition: 0.3s linear;
+
+}
+.ul-tags a:hover::after{
+    width: 100%;
+}
