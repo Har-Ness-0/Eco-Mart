@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #0f663d;
-      filter: drop-shadow(0 0.2rem 0.85rem rgb(78, 75, 70));
+    filter: drop-shadow(0 0.2rem 0.85rem rgb(78, 75, 70));
 
 
     height: 80px;
@@ -96,6 +96,7 @@ body {
         color: antiquewhite;
         margin: 25px;
         font-size: 30px;
+        cursor: pointer;
 
 }
 
