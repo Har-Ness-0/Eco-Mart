@@ -18,8 +18,9 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
+  background-color: #FAF7F2;
+
   flex-direction: column;
-    background-color: #0F5132;
 
   line-height: 1.5; 
 }
@@ -28,9 +29,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  background-color: #FAF7F2;
+    background-color: #0f663d;
+      filter: drop-shadow(0 8px 0.85rem rgb(84, 85, 84));
 
-    height: 70px;
+
+    height: 80px;
 }
 
 .rectangle-container{
@@ -43,7 +46,7 @@ body {
 }
 
 .text{
-        color: #0F5132;
+        color:antiquewhite;
 
     font-family: 'Mayrean';
     font-size: 30px;
@@ -57,41 +60,49 @@ body {
     width: 180%;
     justify-content: center;
     align-items: center;
+    margin-right: 8rem;
  
 }
 .ul-tags ul{
     gap: 25px;
     display: flex;
     list-style: none;
+    margin-left: 10.3rem;
+    
     
 }
 .ul-tags ul li a{
     text-decoration: none;
     font-family: 'Mayrean';
-    color: #0F5132;
+    color: antiquewhite;
     font-weight: 20px;
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
     transition: 0.2s ease-in ;
 }
+  
 
-#cart{
-        color: #0F5132;
+.cart-bar-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 3rem;
 
-    font-size: 30px;
-    margin-left: 30rem;
+
 }
-#hamburger{
-    color: #0F5132;
 
-    font-size: 30px;
-    margin-left: 2rem;
-   
+.cart-bar-container i{
+        color: antiquewhite;
+        margin: 25px;
+        font-size: 30px;
+
 }
+
 .ul-tags a:after{
     content: "";
     position: absolute;
-    background-color: #0F5132;
+    background-color: antiquewhite;
 
     height: 3px;
     width: 0%;
