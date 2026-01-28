@@ -1,0 +1,180 @@
+<!-- File: view-product-page.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product — EcoMart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/CSS/view-product-css.css" />
+    <link rel="stylesheet" href="/CSS/product.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1>EcoMART.</h1>
+        </div>
+
+        <div class="navbar-ul-tags-container">
+          <ul>
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Research</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </div>
+        <div class="search-bar-container">
+          <input type="text" placeholder="Search products..." />
+          <button>Search</button>
+        </div>
+
+        <div class="cart-hamburger-container">
+          <i class="material-symbols-outlined"> shopping_cart</i>
+          <i class="material-symbols-outlined"> dehaze</i>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap product-page">
+      <section class="product">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="/images/beeswax-food-wrap.jpg"
+              alt="Organic Olive Oil bottle"
+            />
+          </div>
+          <div class="thumbnails" role="list">
+            <button class="thumb">
+              <img src="/images/neem-wooden-comb.jpg" />
+            </button>
+            <button class="thumb">
+              <img src="/images/toothbrush.jpg" />
+            </button>
+            <button class="thumb">
+              <img src="/images/Disposable-trash-bags.jpg" />
+            </button>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h1 class="product-title">Organic Extra Virgin Olive Oil — 500ml</h1>
+          <div class="meta">
+            <div class="rating" aria-label="4.6 out of 5 stars">
+              ★★★★★ <span class="sr-only">4.6</span>
+            </div>
+            <div class="sku">SKU: OM-500-OLV</div>
+          </div>
+
+          <div class="price-stock">
+            <div class="price">
+              <span class="now">₹499</span>
+              <span class="was">₹599</span>
+              <span class="badge">15% OFF</span>
+            </div>
+            <div class="stock in-stock">In stock</div>
+          </div>
+
+          <p class="short-desc">
+            Cold-pressed, single-origin organic olive oil with a fresh fruity
+            aroma. Perfect for salads, dressings, and finishing dishes.
+          </p>
+
+          <form
+            class="purchase"
+            onsubmit="
+              event.preventDefault();
+              addToCart();
+            "
+          >
+            <fieldset class="options">
+              <legend>Quantity</legend>
+              <div class="qty">
+                <button
+                  type="button"
+                  id="decrease"
+                  aria-label="Decrease quantity"
+                >
+                  −
+                </button>
+                <input
+                  id="quantity"
+                  name="quantity"
+                  type="number"
+                  min="1"
+                  value="1"
+                />
+                <button
+                  type="button"
+                  id="increase"
+                  aria-label="Increase quantity"
+                >
+                  +
+                </button>
+              </div>
+            </fieldset>
+
+            <div class="actions">
+              <button class="btn primary" type="submit">Add to cart</button>
+              <button class="btn ghost" type="button" onclick="buyNow()">
+                Buy now
+              </button>
+              <button
+                class="btn icon"
+                type="button"
+                aria-pressed="false"
+                onclick="toggleWishlist(this)"
+              >
+                ♡ Wishlist
+              </button>
+            </div>
+          </form>
+
+          <details class="details">
+            <summary>Product details</summary>
+            <ul>
+              <li>Net content: 500ml</li>
+              <li>Cold-pressed, unrefined</li>
+              <li>Certifications: Organic &amp; Fair Trade</li>
+              <li>Best before: 18 months from production</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="more-info">
+        <h2>Specifications</h2>
+        <table>
+          <tr>
+            <th>Origin</th>
+            <td>Crete, Greece</td>
+          </tr>
+          <tr>
+            <th>Packaging</th>
+            <td>Dark glass bottle</td>
+          </tr>
+          <tr>
+            <th>Storage</th>
+            <td>Store in a cool, dry place away from sunlight</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>© EcoMart</small>
+      </div>
+    </footer>
+
+    <script type="module" src="/JS/view-product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "Brandon-text-regular";
+  src: url(fonts/HvDTrial_Brandon_Text_Bold-BF6514e9eb720dc.otf);
+}
+@font-face {
+  font-family: "Mayrean";
+  src: url(fonts/SHRIMP.ttf);
+}
+@font-face {
+  font-family: "Padauk";
+  src: url(fonts/Padauk-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Ramabhadra";
+  src: url("/fonts/homepage-fonts/Ramabhadra-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #d9f2db;
+  position: relative;
+  width: 100%;
+}
+
+#landing-page-one {
+  position: relative;
+  min-height: 100vh;
+
+}
+#landing-page-two {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+.productPage {
+  background-color: #eaf7ec;
+}
+
+/* #landing-page-one {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#landing-page-two {
+  overflow-x: hidden;
+  min-height: 100vh;
+} */
+
+
+
+/* .hero-text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  position: relative;
+
+
+}
+
+.hero-text h1{
+  margin-top: -20rem;
+  font-family: Mayrean;
+  font-size: 20rem;
+  color: #dfdfdf;
+  transform: scaleY(1.3);
+  opacity: 40%;
+  
+   
+}
+.display-desc-wrapper{
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  
+  
+
+
+}
+.desc1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+ 
+}
+
+
+.desc1 h1, .desc1 p{
+
+  color: #dfdfdf ;
+  white-space: pre-line;
+  font-weight: 50;
+  font-family: BebasNeue-Regular;
+  margin-left: 20rem;
+
+} */
+
+/* HOMEPAGE section page 01 ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.line-hero-text-container {
+  position: absolute;
+  inset: 0;
+  padding-left: 10%;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-rows: max-content auto max-content;
+}
+
+.horizantal-lines {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.h-line-1 {
+  margin-top: 2rem;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.h-line-2 {
+  margin-top: 52rem;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.v-line-wrapper {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  display: flex;
+  gap: 10rem;
+  height: 100%;
+  pointer-events: none;
+}
+
+.v1,
+.v2 {
+  height: 100%;
+  border-left: 1px solid black;
+  opacity: 0.18;
+}
+
+.hero-text {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 12rem;
+
+  font-family: Ramabhadra;
+  font-size: clamp(2.5rem, 2vw, 6.24rem);
+  line-height: 6rem;
+
+  max-width: 100%;
+}
+
+.hero-text span {
+  opacity: 0.3;
+}
+
+.image-container {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 12rem;
+  margin-left: -6rem;
+  margin-right: 2rem;
+
+  justify-self: center;
+}
+
+.image-container img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.logo_navlinks_container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: start;
+}
+
+.logo-wrapper {
+  margin-top: 3.2rem;
+  margin-left: 6.24rem;
+}
+
+.logo-wrapper h1 {
+  font-family: Ramabhadra;
+}
+
+.ul-tags-container {
+  
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-right: 12rem;
+}
+
+.ul-tags-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 4rem;
+  margin-right: 6rem;
+}
+
+.ul-tags-container li a {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e432a;
+  text-decoration: none;
+}
+
+.ul-tags-container li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-color: #374b38;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.ul-tags-container li a:hover::after {
+  width: 100%;
+}
+
+.hero-text-2-wrapper {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.hero-text-2-wrapper h1 {
+  margin-top: 4rem;
+  font-family: Ramabhadra;
+  line-height: 2.2rem;
+}
+
+.hero-link-wrapper {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 10em;
+  margin-left: -5.9rem;
+}
+
+.hero-link-wrapper li {
+  list-style: none;
+}
+
+.hero-link-wrapper a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e432a;
+}
+
+
+@media (max-width: 1418px) {
+  .ul-tags-container{
+    display: none;
+  }
+ 
+}
+/* FAQ Section- page 2 ----------------------------------------------------------------------------------------------------------------------------------------------*/
+.faq-title-wrapper p {
+  font-family: Ramabhadra;
+}
+
+.faq-title-wrapper {
+  position: absolute;
+  height: 20%;
+  width: 30%;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.faq-section-hero-text-wrapper h1 {
+  font-family: Ramabhadra;
+  margin-left: 2%;
+  margin-top: 10%;
+  font-size: 50px;
+  line-height: 0.89;
+}
+
+/* faq section checkboxes */
+
+.check-list-wrapper {
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 25%;
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.check-list-wrapper p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* faq page accordian */
+
+.accordion-container {
+  height: 100vh;
+  width: 100%;
+  margin-left: 60rem;
+  position: absolute;
+  top: 21%;
+}
+
+.accordion {
+  display: flex;
+  width: 40%;
+  margin-top: 1.5rem;
+}
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-container li {
+  list-style: none;
+  margin-top: 0.5%;
+}
+.accordion-container label {
+  font-family: Ramabhadra;
+  margin-top: 1.5%;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.accordion-container input {
+  display: none;
+}
+
+.accordion-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+.content {
+  margin-top: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.accordion li.active .content {
+  max-height: 100px;
+}
+
+#arrow-icon {
+  transition: transform 0.4s ease;
+}
+
+.accordion li.active #arrow-icon {
+  transform: rotate(180deg);
+}
